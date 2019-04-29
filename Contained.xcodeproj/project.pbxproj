@@ -13,6 +13,7 @@
 		0FA89E9E2277934C00E8D031 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA89E9C2277934C00E8D031 /* LaunchScreen.storyboard */; };
 		0FA89EA62277948D00E8D031 /* Crab.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FA89EA52277948D00E8D031 /* Crab.xcassets */; };
 		0FA89EA8227794A300E8D031 /* SKSpriteNode+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA89EA7227794A300E8D031 /* SKSpriteNode+Utility.swift */; };
+		0FA89EAD2277951800E8D031 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA89EAC2277951800E8D031 /* Settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0FA89E9F2277934C00E8D031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FA89EA52277948D00E8D031 /* Crab.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Crab.xcassets; sourceTree = "<group>"; };
 		0FA89EA7227794A300E8D031 /* SKSpriteNode+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKSpriteNode+Utility.swift"; sourceTree = "<group>"; };
+		0FA89EAC2277951800E8D031 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,38 @@
 			children = (
 				0FA89E932277934C00E8D031 /* AppDelegate.swift */,
 				0FA89EA7227794A300E8D031 /* SKSpriteNode+Utility.swift */,
+				0FA89EAC2277951800E8D031 /* Settings.swift */,
+				0FA89EAB2277950200E8D031 /* View Controllers */,
+				0FA89EA9227794E300E8D031 /* Storyboards */,
+				0FA89EAA227794EE00E8D031 /* Resources */,
+			);
+			path = Contained;
+			sourceTree = "<group>";
+		};
+		0FA89EA9227794E300E8D031 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
 				0FA89E972277934C00E8D031 /* Main.storyboard */,
-				0FA89E9A2277934C00E8D031 /* Assets.xcassets */,
 				0FA89E9C2277934C00E8D031 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0FA89EAA227794EE00E8D031 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0FA89E9A2277934C00E8D031 /* Assets.xcassets */,
 				0FA89EA52277948D00E8D031 /* Crab.xcassets */,
 				0FA89E9F2277934C00E8D031 /* Info.plist */,
 			);
-			path = Contained;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0FA89EAB2277950200E8D031 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FA89EAD2277951800E8D031 /* Settings.swift in Sources */,
 				0FA89E942277934C00E8D031 /* AppDelegate.swift in Sources */,
 				0FA89EA8227794A300E8D031 /* SKSpriteNode+Utility.swift in Sources */,
 			);
