@@ -28,5 +28,10 @@ class SettingsViewController: UIViewController {
         print("Zoom switch is now \(Settings.shared.shouldZoom).")
     }
     
-
+    @IBAction func toggleScream(_ sender: Any) {
+        let screamSwitch = sender as! UISwitch
+        Settings.shared.shouldScream = screamSwitch.isOn
+        print("Scream switch is now \(Settings.shared.shouldScream).")
+    }
+    
 }

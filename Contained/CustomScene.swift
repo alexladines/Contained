@@ -36,6 +36,7 @@ class CustomScene: SKScene {
         let zoomAction = SKAction.scale(by: 1.3, duration: 0.3)
         let unzoomAction = SKAction.scale(to: 1.0, duration: 0.1)
         
+        
         switch Settings.shared.shouldZoom {
         case false:
             crab.run(moveAction)
@@ -46,6 +47,10 @@ class CustomScene: SKScene {
         
         if Settings.shared.shouldRoll {
             crab.run(rollAction)
+        }
+        
+        if Settings.shared.shouldScream {
+            crab.run(SKAction.playSoundFileNamed("Scream.mp3", waitForCompletion: false))
         }
     }
 }
